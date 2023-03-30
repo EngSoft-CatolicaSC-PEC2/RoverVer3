@@ -1,0 +1,186 @@
+The system is: Linux - 6.1.5-229.current - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/dvw/Documents/projetos/RoverVer3/cmake-build-debug/CMakeFiles/3.24.2/CompilerIdC/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/dvw/Documents/projetos/RoverVer3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/snap/clion/229/bin/ninja/linux/x64/ninja cmTC_80b32 && [1/2] Building C object CMakeFiles/cmTC_80b32.dir/CMakeCCompilerABI.c.o
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+Target: x86_64-solus-linux
+Configured with: ../configure --prefix=/usr --with-pkgversion=Solus --libdir=/usr/lib64 --libexecdir=/usr/lib64 --with-system-zlib --enable-cet --enable-default-pie --enable-default-ssp --enable-lto --enable-shared --enable-threads=posix --enable-gnu-indirect-function --enable-__cxa_atexit --enable-plugin --enable-gold --enable-ld=default --enable-clocale=gnu --enable-multilib --with-multilib-list=m32,m64 --with-gcc-major-version-only --with-bugurl=https://dev.getsol.us/ --with-build-config=bootstrap-lto-lean --with-arch_32=i686 --enable-linker-build-id --with-linker-hash-style=gnu --with-gnu-ld --build=x86_64-solus-linux --target=x86_64-solus-linux --enable-languages=c,c++,fortran,ada
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 12.2.0 (Solus) 
+COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_80b32.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_80b32.dir/'
+ /usr/lib64/gcc/x86_64-solus-linux/12/cc1 -quiet -v /snap/clion/229/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_80b32.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /tmp/ccHgf3Cz.s
+GNU C17 (Solus) version 12.2.0 (x86_64-solus-linux)
+	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include"
+ignoring nonexistent directory "/usr/lib64/gcc/x86_64-solus-linux/12/../../../../x86_64-solus-linux/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib64/gcc/x86_64-solus-linux/12/include
+ /usr/lib64/gcc/x86_64-solus-linux/12/include-fixed
+ /usr/include
+End of search list.
+GNU C17 (Solus) version 12.2.0 (x86_64-solus-linux)
+	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 2851671ae9c7a77f5a6767ad96bea7f1
+COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_80b32.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_80b32.dir/'
+ as -v --64 -o CMakeFiles/cmTC_80b32.dir/CMakeCCompilerABI.c.o /tmp/ccHgf3Cz.s
+GNU assembler version 2.39 (x86_64-solus-linux) using BFD version (GNU Binutils) 2.39
+COMPILER_PATH=/usr/lib64/gcc/x86_64-solus-linux/12/:/usr/lib64/gcc/x86_64-solus-linux/12/:/usr/lib64/gcc/x86_64-solus-linux/:/usr/lib64/gcc/x86_64-solus-linux/12/:/usr/lib64/gcc/x86_64-solus-linux/
+LIBRARY_PATH=/usr/lib64/gcc/x86_64-solus-linux/12/:/usr/lib64/gcc/x86_64-solus-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-solus-linux/12/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_80b32.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_80b32.dir/CMakeCCompilerABI.c.'
+[2/2] Linking C executable cmTC_80b32
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib64/gcc/x86_64-solus-linux/12/lto-wrapper
+Target: x86_64-solus-linux
+Configured with: ../configure --prefix=/usr --with-pkgversion=Solus --libdir=/usr/lib64 --libexecdir=/usr/lib64 --with-system-zlib --enable-cet --enable-default-pie --enable-default-ssp --enable-lto --enable-shared --enable-threads=posix --enable-gnu-indirect-function --enable-__cxa_atexit --enable-plugin --enable-gold --enable-ld=default --enable-clocale=gnu --enable-multilib --with-multilib-list=m32,m64 --with-gcc-major-version-only --with-bugurl=https://dev.getsol.us/ --with-build-config=bootstrap-lto-lean --with-arch_32=i686 --enable-linker-build-id --with-linker-hash-style=gnu --with-gnu-ld --build=x86_64-solus-linux --target=x86_64-solus-linux --enable-languages=c,c++,fortran,ada
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 12.2.0 (Solus) 
+COMPILER_PATH=/usr/lib64/gcc/x86_64-solus-linux/12/:/usr/lib64/gcc/x86_64-solus-linux/12/:/usr/lib64/gcc/x86_64-solus-linux/:/usr/lib64/gcc/x86_64-solus-linux/12/:/usr/lib64/gcc/x86_64-solus-linux/
+LIBRARY_PATH=/usr/lib64/gcc/x86_64-solus-linux/12/:/usr/lib64/gcc/x86_64-solus-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-solus-linux/12/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_80b32' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_80b32.'
+ /usr/lib64/gcc/x86_64-solus-linux/12/collect2 -plugin /usr/lib64/gcc/x86_64-solus-linux/12/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-solus-linux/12/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5kumwE.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /usr/lib64/ld-linux-x86-64.so.2 -pie -o cmTC_80b32 /usr/lib64/gcc/x86_64-solus-linux/12/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-solus-linux/12/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-solus-linux/12/crtbeginS.o -L/usr/lib64/gcc/x86_64-solus-linux/12 -L/usr/lib64/gcc/x86_64-solus-linux/12/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-solus-linux/12/../../.. CMakeFiles/cmTC_80b32.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib64/gcc/x86_64-solus-linux/12/crtendS.o /usr/lib64/gcc/x86_64-solus-linux/12/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_80b32' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_80b32.'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib64/gcc/x86_64-solus-linux/12/include]
+    add: [/usr/lib64/gcc/x86_64-solus-linux/12/include-fixed]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib64/gcc/x86_64-solus-linux/12/include] ==> [/usr/lib64/gcc/x86_64-solus-linux/12/include]
+  collapse include dir [/usr/lib64/gcc/x86_64-solus-linux/12/include-fixed] ==> [/usr/lib64/gcc/x86_64-solus-linux/12/include-fixed]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib64/gcc/x86_64-solus-linux/12/include;/usr/lib64/gcc/x86_64-solus-linux/12/include-fixed;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/dvw/Documents/projetos/RoverVer3/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/snap/clion/229/bin/ninja/linux/x64/ninja cmTC_80b32 && [1/2] Building C object CMakeFiles/cmTC_80b32.dir/CMakeCCompilerABI.c.o]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [Target: x86_64-solus-linux]
+  ignore line: [Configured with: ../configure --prefix=/usr --with-pkgversion=Solus --libdir=/usr/lib64 --libexecdir=/usr/lib64 --with-system-zlib --enable-cet --enable-default-pie --enable-default-ssp --enable-lto --enable-shared --enable-threads=posix --enable-gnu-indirect-function --enable-__cxa_atexit --enable-plugin --enable-gold --enable-ld=default --enable-clocale=gnu --enable-multilib --with-multilib-list=m32,m64 --with-gcc-major-version-only --with-bugurl=https://dev.getsol.us/ --with-build-config=bootstrap-lto-lean --with-arch_32=i686 --enable-linker-build-id --with-linker-hash-style=gnu --with-gnu-ld --build=x86_64-solus-linux --target=x86_64-solus-linux --enable-languages=c,c++,fortran,ada]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 12.2.0 (Solus) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_80b32.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_80b32.dir/']
+  ignore line: [ /usr/lib64/gcc/x86_64-solus-linux/12/cc1 -quiet -v /snap/clion/229/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_80b32.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o /tmp/ccHgf3Cz.s]
+  ignore line: [GNU C17 (Solus) version 12.2.0 (x86_64-solus-linux)]
+  ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/usr/lib64/gcc/x86_64-solus-linux/12/../../../../x86_64-solus-linux/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib64/gcc/x86_64-solus-linux/12/include]
+  ignore line: [ /usr/lib64/gcc/x86_64-solus-linux/12/include-fixed]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (Solus) version 12.2.0 (x86_64-solus-linux)]
+  ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 2851671ae9c7a77f5a6767ad96bea7f1]
+  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_80b32.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_80b32.dir/']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_80b32.dir/CMakeCCompilerABI.c.o /tmp/ccHgf3Cz.s]
+  ignore line: [GNU assembler version 2.39 (x86_64-solus-linux) using BFD version (GNU Binutils) 2.39]
+  ignore line: [COMPILER_PATH=/usr/lib64/gcc/x86_64-solus-linux/12/:/usr/lib64/gcc/x86_64-solus-linux/12/:/usr/lib64/gcc/x86_64-solus-linux/:/usr/lib64/gcc/x86_64-solus-linux/12/:/usr/lib64/gcc/x86_64-solus-linux/]
+  ignore line: [LIBRARY_PATH=/usr/lib64/gcc/x86_64-solus-linux/12/:/usr/lib64/gcc/x86_64-solus-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-solus-linux/12/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_80b32.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_80b32.dir/CMakeCCompilerABI.c.']
+  ignore line: [[2/2] Linking C executable cmTC_80b32]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib64/gcc/x86_64-solus-linux/12/lto-wrapper]
+  ignore line: [Target: x86_64-solus-linux]
+  ignore line: [Configured with: ../configure --prefix=/usr --with-pkgversion=Solus --libdir=/usr/lib64 --libexecdir=/usr/lib64 --with-system-zlib --enable-cet --enable-default-pie --enable-default-ssp --enable-lto --enable-shared --enable-threads=posix --enable-gnu-indirect-function --enable-__cxa_atexit --enable-plugin --enable-gold --enable-ld=default --enable-clocale=gnu --enable-multilib --with-multilib-list=m32,m64 --with-gcc-major-version-only --with-bugurl=https://dev.getsol.us/ --with-build-config=bootstrap-lto-lean --with-arch_32=i686 --enable-linker-build-id --with-linker-hash-style=gnu --with-gnu-ld --build=x86_64-solus-linux --target=x86_64-solus-linux --enable-languages=c,c++,fortran,ada]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 12.2.0 (Solus) ]
+  ignore line: [COMPILER_PATH=/usr/lib64/gcc/x86_64-solus-linux/12/:/usr/lib64/gcc/x86_64-solus-linux/12/:/usr/lib64/gcc/x86_64-solus-linux/:/usr/lib64/gcc/x86_64-solus-linux/12/:/usr/lib64/gcc/x86_64-solus-linux/]
+  ignore line: [LIBRARY_PATH=/usr/lib64/gcc/x86_64-solus-linux/12/:/usr/lib64/gcc/x86_64-solus-linux/12/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-solus-linux/12/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_80b32' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_80b32.']
+  link line: [ /usr/lib64/gcc/x86_64-solus-linux/12/collect2 -plugin /usr/lib64/gcc/x86_64-solus-linux/12/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-solus-linux/12/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5kumwE.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /usr/lib64/ld-linux-x86-64.so.2 -pie -o cmTC_80b32 /usr/lib64/gcc/x86_64-solus-linux/12/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-solus-linux/12/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-solus-linux/12/crtbeginS.o -L/usr/lib64/gcc/x86_64-solus-linux/12 -L/usr/lib64/gcc/x86_64-solus-linux/12/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-solus-linux/12/../../.. CMakeFiles/cmTC_80b32.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib64/gcc/x86_64-solus-linux/12/crtendS.o /usr/lib64/gcc/x86_64-solus-linux/12/../../../../lib64/crtn.o]
+    arg [/usr/lib64/gcc/x86_64-solus-linux/12/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib64/gcc/x86_64-solus-linux/12/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib64/gcc/x86_64-solus-linux/12/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc5kumwE.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/usr/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_80b32] ==> ignore
+    arg [/usr/lib64/gcc/x86_64-solus-linux/12/../../../../lib64/Scrt1.o] ==> obj [/usr/lib64/gcc/x86_64-solus-linux/12/../../../../lib64/Scrt1.o]
+    arg [/usr/lib64/gcc/x86_64-solus-linux/12/../../../../lib64/crti.o] ==> obj [/usr/lib64/gcc/x86_64-solus-linux/12/../../../../lib64/crti.o]
+    arg [/usr/lib64/gcc/x86_64-solus-linux/12/crtbeginS.o] ==> obj [/usr/lib64/gcc/x86_64-solus-linux/12/crtbeginS.o]
+    arg [-L/usr/lib64/gcc/x86_64-solus-linux/12] ==> dir [/usr/lib64/gcc/x86_64-solus-linux/12]
+    arg [-L/usr/lib64/gcc/x86_64-solus-linux/12/../../../../lib64] ==> dir [/usr/lib64/gcc/x86_64-solus-linux/12/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib64/gcc/x86_64-solus-linux/12/../../..] ==> dir [/usr/lib64/gcc/x86_64-solus-linux/12/../../..]
+    arg [CMakeFiles/cmTC_80b32.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib64/gcc/x86_64-solus-linux/12/crtendS.o] ==> obj [/usr/lib64/gcc/x86_64-solus-linux/12/crtendS.o]
+    arg [/usr/lib64/gcc/x86_64-solus-linux/12/../../../../lib64/crtn.o] ==> obj [/usr/lib64/gcc/x86_64-solus-linux/12/../../../../lib64/crtn.o]
+  collapse obj [/usr/lib64/gcc/x86_64-solus-linux/12/../../../../lib64/Scrt1.o] ==> [/usr/lib64/Scrt1.o]
+  collapse obj [/usr/lib64/gcc/x86_64-solus-linux/12/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+  collapse obj [/usr/lib64/gcc/x86_64-solus-linux/12/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+  collapse library dir [/usr/lib64/gcc/x86_64-solus-linux/12] ==> [/usr/lib64/gcc/x86_64-solus-linux/12]
+  collapse library dir [/usr/lib64/gcc/x86_64-solus-linux/12/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib64/gcc/x86_64-solus-linux/12/../../..] ==> [/usr/lib64]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/usr/lib64/Scrt1.o;/usr/lib64/crti.o;/usr/lib64/gcc/x86_64-solus-linux/12/crtbeginS.o;/usr/lib64/gcc/x86_64-solus-linux/12/crtendS.o;/usr/lib64/crtn.o]
+  implicit dirs: [/usr/lib64/gcc/x86_64-solus-linux/12;/usr/lib64;/lib64]
+  implicit fwks: []
+
+
