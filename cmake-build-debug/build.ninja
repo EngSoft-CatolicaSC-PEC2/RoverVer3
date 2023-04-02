@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: MultiExample
+# Project: RoverVer3
 # Configurations: Debug
 # =============================================================================
 
@@ -55,20 +55,8 @@ build CMakeFiles/MultiExample.dir/main.c.o: C_COMPILER__MultiExample_Debug /home
   OBJECT_DIR = CMakeFiles/MultiExample.dir
   OBJECT_FILE_DIR = CMakeFiles/MultiExample.dir
 
-build CMakeFiles/MultiExample.dir/utils.c.o: C_COMPILER__MultiExample_Debug /home/dvw/Documents/projetos/RoverVer3/utils.c || cmake_object_order_depends_target_MultiExample
-  DEP_FILE = CMakeFiles/MultiExample.dir/utils.c.o.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/MultiExample.dir
-  OBJECT_FILE_DIR = CMakeFiles/MultiExample.dir
-
-build CMakeFiles/MultiExample.dir/imprimir.c.o: C_COMPILER__MultiExample_Debug /home/dvw/Documents/projetos/RoverVer3/imprimir.c || cmake_object_order_depends_target_MultiExample
-  DEP_FILE = CMakeFiles/MultiExample.dir/imprimir.c.o.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/MultiExample.dir
-  OBJECT_FILE_DIR = CMakeFiles/MultiExample.dir
-
-build CMakeFiles/MultiExample.dir/mapa.c.o: C_COMPILER__MultiExample_Debug /home/dvw/Documents/projetos/RoverVer3/mapa.c || cmake_object_order_depends_target_MultiExample
-  DEP_FILE = CMakeFiles/MultiExample.dir/mapa.c.o.d
+build CMakeFiles/MultiExample.dir/map.c.o: C_COMPILER__MultiExample_Debug /home/dvw/Documents/projetos/RoverVer3/map.c || cmake_object_order_depends_target_MultiExample
+  DEP_FILE = CMakeFiles/MultiExample.dir/map.c.o.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/MultiExample.dir
   OBJECT_FILE_DIR = CMakeFiles/MultiExample.dir
@@ -87,7 +75,7 @@ build CMakeFiles/MultiExample.dir/rover.c.o: C_COMPILER__MultiExample_Debug /hom
 #############################################
 # Link the executable MultiExample
 
-build MultiExample: C_EXECUTABLE_LINKER__MultiExample_Debug CMakeFiles/MultiExample.dir/main.c.o CMakeFiles/MultiExample.dir/utils.c.o CMakeFiles/MultiExample.dir/imprimir.c.o CMakeFiles/MultiExample.dir/mapa.c.o CMakeFiles/MultiExample.dir/rover.c.o
+build MultiExample: C_EXECUTABLE_LINKER__MultiExample_Debug CMakeFiles/MultiExample.dir/main.c.o CMakeFiles/MultiExample.dir/map.c.o CMakeFiles/MultiExample.dir/rover.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/MultiExample.dir
   POST_BUILD = :

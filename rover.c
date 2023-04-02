@@ -1,154 +1,155 @@
 
 
 #include <stdio.h>
-#include "mapa.h"
+#include "map.h"
 #include "rover.h"
 
-int roverLinha = 0;
-int roverColuna = 0;
-int destinoLinha = 0;
-int destinoColuna = 0;
+int roverRow = 0;
+int roverColumn = 0;
+int destinationRow = 0;
+int destinationColumn = 0;
 
-int roverMoverMatrizBloqueio(){
-    if (roverColuna < destinoColuna) {
-        return roverMoverBloqueio(DIREITA);
-    } else if (roverColuna > destinoColuna) {
-        return roverMoverBloqueio(ESQUERDA);
-    }else if (roverLinha < destinoLinha) {
-        return roverMoverBloqueio(BAIXO);
-    } else if (roverLinha > destinoLinha) {
-        return roverMoverBloqueio(CIMA);
+int roverMoveMatrixBlocking() {
+    if (roverColumn < destinationColumn) {
+        return roverMoveBlocking(RIGHT);
+    } else if (roverColumn > destinationColumn) {
+        return roverMoveBlocking(LEFT);
+    } else if (roverRow < destinationRow) {
+        return roverMoveBlocking(DOWN);
+    } else if (roverRow > destinationRow) {
+        return roverMoveBlocking(UP);
     }
 }
 
-int roverMoverMatriz() {
-    if (roverColuna < destinoColuna) {
-        return roverMover(DIREITA);
-    } else if (roverColuna > destinoColuna) {
-        return roverMover(ESQUERDA);
-    }else if (roverLinha < destinoLinha) {
-        return roverMover(BAIXO);
-    } else if (roverLinha > destinoLinha) {
-        return roverMover(CIMA);
+int roverMoveMatrix() {
+    if (roverColumn < destinationColumn) {
+        return roverMove(RIGHT);
+    } else if (roverColumn > destinationColumn) {
+        return roverMove(LEFT);
+    } else if (roverRow < destinationRow) {
+        return roverMove(DOWN);
+    } else if (roverRow > destinationRow) {
+        return roverMove(UP);
     }
 }
 
-int roverMoverLinha() {
+int roverMoveRow() {
 
-    if (roverLinha != destinoLinha) {
-        return MOVIMENTO_LINHA_ERRADA;
-    } else if (roverColuna < destinoColuna) {
-        return roverMover(DIREITA);
-    } else if (roverColuna > destinoColuna) {
-        return roverMover(ESQUERDA);
+    if (roverRow != destinationRow) {
+        return MOVEMENT_WRONG_LINE;
+    } else if (roverColumn < destinationColumn) {
+        return roverMove(RIGHT);
+    } else if (roverColumn > destinationColumn) {
+        return roverMove(LEFT);
     } else {
-        return MOVIMENTO_FINAL;
+        return MOVEMENT_END;
     }
 }
 
 
-int roverLerMapa(char comando){
-    if (comando == DIREITA && ehLimiteDiretoMapa() != 0) {
-        return mapaLer(roverLinha,roverColuna+1);
-    } else if (comando == ESQUERDA && ehLimiteEsquerdoMapa() != 0) {
-        return mapaLer(roverLinha,roverColuna-1);
-    } else if (comando == CIMA && ehLimiteSuperiorMapa() != 0) {
-        return mapaLer(roverLinha-1,roverColuna);
-    } else if (comando == BAIXO && ehLimiteInferiorMapa() != 0) {
-        return mapaLer(roverLinha+1,roverColuna);
+int roverReadMap(char command) {
+    if (command == RIGHT && isRightMapLimit() != 0) {
+        return readPosition(roverRow, roverColumn + 1);
+    } else if (command == LEFT && isLeftMapLimit() != 0) {
+        return readPosition(roverRow, roverColumn - 1);
+    } else if (command == UP && isUpperMapLimit() != 0) {
+        return readPosition(roverRow - 1, roverColumn);
+    } else if (command == DOWN && isLowerMapLimit() != 0) {
+        return readPosition(roverRow + 1, roverColumn);
     } else {
-        return INVALIDO;
+        return INVALID;
     }
 }
 
-void roverSetInicio(int linha, int coluna) {
-    roverLinha = linha;
-    roverColuna = coluna;
-    roverFazerRastro();
+void roverSetStart(int row, int column) {
+    roverRow = row;
+    roverColumn = column;
+    roverMakeTrail();
 }
 
-void roverSetDestino(int linha, int coluna) {
-    destinoLinha = linha;
-    destinoColuna = coluna;
-    mapaMarcar(linha, coluna, DESTINO);
+void roverSetDestination(int row, int column) {
+    destinationRow = row;
+    destinationColumn = column;
+    markPosition(row, column, DESTINATION);
 }
 
 
-int roverMoverBloqueio(char comando) {
-    char infoMapa = roverLerMapa(comando);
-    if(infoMapa == INVALIDO || infoMapa == BLOQUEIO || infoMapa == RASTRO)
-    {
-        comando = roverGirarRobo(comando);
-        return roverMoverBloqueio(comando);
+int roverMoveBlocking(char command) {
+    char mapInfo = roverReadMap(command);
+    if (mapInfo == INVALID || mapInfo == BLOCK || mapInfo == TRAIL) {
+        command = roverRotateRobot(command);
+        return roverMoveBlocking(command);
     }
-    return roverMover(comando);
+    return roverMove(command);
 
 }
 
-int roverGirarRobo (char comando){
-    if(comando == DIREITA)
-        if(ehLimiteInferiorMapa() != 0)
-            return BAIXO;
+int roverRotateRobot(char command) {
+    if (command == RIGHT)
+        if (isLowerMapLimit() != 0)
+            return DOWN;
         else
-            return CIMA;
-    if(comando == BAIXO)
-        if(ehLimiteEsquerdoMapa() != 0)
-            return ESQUERDA;
+            return UP;
+    if (command == DOWN)
+        if (isLeftMapLimit() != 0)
+            return LEFT;
         else
-            return DIREITA;
-    if(comando == ESQUERDA)
-        if(ehLimiteSuperiorMapa() != 0)
-            return CIMA;
+            return RIGHT;
+    if (command == LEFT)
+        if (isUpperMapLimit() != 0)
+            return UP;
         else
-            return BAIXO;
-    if(comando == CIMA)
-        if(ehLimiteDiretoMapa() != 0)
-            return DIREITA;
+            return DOWN;
+    if (command == UP)
+        if (isRightMapLimit() != 0)
+            return RIGHT;
         else
-            return ESQUERDA;
+            return LEFT;
 }
 
-int roverMover(char comando) {
-    if (comando == DIREITA && ehLimiteDiretoMapa() != 0) {
-        roverColuna++;
-    } else if (comando == ESQUERDA && ehLimiteEsquerdoMapa() != 0) {
-        roverColuna--;
-    } else if (comando == CIMA && ehLimiteSuperiorMapa() != 0) {
-        roverLinha--;
-    } else if (comando == BAIXO && ehLimiteInferiorMapa() != 0) {
-        roverLinha++;
+int roverMove(char command) {
+    if (command == RIGHT && isRightMapLimit() != 0) {
+        roverColumn++;
+    } else if (command == LEFT && isLeftMapLimit() != 0) {
+        roverColumn--;
+    } else if (command == UP && isUpperMapLimit() != 0) {
+        roverRow--;
+    } else if (command == DOWN && isLowerMapLimit() != 0) {
+        roverRow++;
     } else {
-        return MOVIMENTO_ERROR;
+        return MOVEMENT_ERROR;
     }
-    roverFazerRastro();
 
-    if (encontrouFinal() != 0) {
-        return MOVIMENTO_FINAL;
+    roverMakeTrail();
+
+
+    if (foundEnd() != 0) {
+        return MOVEMENT_END;
     } else {
-        return MOVIMENTO_SUCESSO;
+        return MOVEMENT_SUCCESS;
     }
 }
 
-int encontrouFinal() {
-    return roverColuna == destinoColuna && roverLinha == destinoLinha;
+int foundEnd() {
+    return roverColumn == destinationColumn && roverRow == destinationRow;
 }
 
-int ehLimiteDiretoMapa() {
-    return roverColuna < TAM_MAPA-1;
+int isRightMapLimit() {
+    return roverColumn < MAP_SIZE - 1;
 }
 
-int ehLimiteEsquerdoMapa() {
-    return roverColuna > 0;
+int isLeftMapLimit() {
+    return roverColumn > 0;
 }
 
-int ehLimiteSuperiorMapa() {
-    return roverLinha > 0;
+int isUpperMapLimit() {
+    return roverRow > 0;
 }
 
-int ehLimiteInferiorMapa() {
-    return roverLinha < TAM_MAPA-1;
+int isLowerMapLimit() {
+    return roverRow < MAP_SIZE - 1;
 }
 
-void roverFazerRastro() {
-    mapaMarcar(roverLinha, roverColuna, RASTRO);
+void roverMakeTrail() {
+    markPosition(roverRow, roverColumn, TRAIL);
 }
